@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+    <form action="/signup" method="POST" id="form">
+        <div class="form">
+            <h1>Registro</h1>
+            <div class="grupo">
+                <label for="">Email</label>
+                <input type="email" name="email" required minlength="10" placeholder="introduce usuario" id="email">
+            </div>
+            <div class="grupo">
+                <label for="">Password</label>
+                <input type="password" name="password" required maxlength="20" minlength="10" placeholder="introduce usuario" id="password">
+            </div>
+            <div class="grupo">
+                <label for="raza">Raza:</label>
+                <select name="raza" id="raza">
+                      <option value="humano">Humano</option>
+                      <option value="elfo">Elfo</option>
+                      <option value="enano">Enano</option>
+                      <option value="hobbit">hobbit</option>
+                    </select>
+            </div>
+            <button type="submit">Enviar</button>
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
