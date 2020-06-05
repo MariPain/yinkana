@@ -35,4 +35,9 @@ form.addEventListener("submit", e => {
     } else {
         parrafo.innerHTML = "Enviado"
     }
-})
+});
+
+function confMsg() {
+    alert("Tus datos se han recibido correctamente, comprueba el correo para activar la cuenta");
+  };
+
